@@ -10,7 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/cli.ts --format esm --dts --clean",
+    "build": "tsup src/cli.ts --format esm --clean",
+    "prepare": "npm run build",
     "dev": "tsx src/cli.ts",
     "test": "vitest run"
   },

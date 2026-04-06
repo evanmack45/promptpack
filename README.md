@@ -6,14 +6,25 @@ Stop copy-pasting files into ChatGPT/Claude. `promptpack` bundles your project i
 
 ## Install
 
+Install from GitHub:
+
 ```bash
-npx promptpack
+npm install -g evanmack45/promptpack
 ```
 
-Or install globally:
+Or run without installing:
 
 ```bash
-npm install -g promptpack
+npx evanmack45/promptpack
+```
+
+Or clone and build locally:
+
+```bash
+git clone https://github.com/evanmack45/promptpack.git
+cd promptpack
+npm install && npm run build
+node dist/cli.js .
 ```
 
 ## Usage
@@ -60,16 +71,9 @@ promptpack -f plain -o prompt.txt
 - **XML** — Optimized for Claude's XML tag parsing
 - **Plain** — Simple text, works everywhere
 
-## Pro
+## Web version
 
-Get Pro for $1 and unlock:
-
-- Smart file selection (prioritize by recent changes)
-- Custom output templates
-- Clipboard integration
-- Priority support
-
-[Get Pro](https://promptpack.gumroad.com/l/pro)
+Try it in your browser at **[promptpack-three.vercel.app](https://promptpack-three.vercel.app)** — drag and drop files, get a prompt instantly.
 
 ## License
 

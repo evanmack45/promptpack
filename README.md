@@ -9,19 +9,19 @@ Stop copy-pasting files into ChatGPT/Claude. `promptpack` bundles your project i
 Install from GitHub:
 
 ```bash
-npm install -g evanmack45/promptpack
+npm install -g etm-industries/promptpack
 ```
 
 Or run without installing:
 
 ```bash
-npx evanmack45/promptpack
+npx etm-industries/promptpack
 ```
 
 Or clone and build locally:
 
 ```bash
-git clone https://github.com/evanmack45/promptpack.git
+git clone https://github.com/etm-industries/promptpack.git
 cd promptpack
 npm install && npm run build
 node dist/cli.js .

@@ -652,7 +652,16 @@
     }
 
     function handleBuy() {
-      window.open('https://buy.polar.sh/polar_cl_Blw84q7G9NdHEKxuEGoDeQ7ydK2kjn8IR7eux4XUPle', '_blank');
+      window.open('https://buy.stripe.com/dRm00b0LObpDfh12rd3oA00', '_blank');
+    }
+
+    // Show thank-you message after purchase
+    if (new URLSearchParams(window.location.search).get('purchased') === 'true') {
+      const banner = document.createElement('div');
+      banner.style.cssText = 'background:var(--accent);color:white;text-align:center;padding:12px;font-size:15px;';
+      banner.textContent = 'Thank you for purchasing promptpack Pro!';
+      document.body.prepend(banner);
+      window.history.replaceState({}, '', window.location.pathname);
     }
   </script>
 </body>

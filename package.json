@@ -1,0 +1,37 @@
+{
+  "name": "promptpack",
+  "version": "1.0.0",
+  "description": "Pack your codebase into a single LLM-ready prompt file",
+  "type": "module",
+  "bin": {
+    "promptpack": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/cli.ts --format esm --dts --clean",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "llm",
+    "prompt",
+    "codebase",
+    "ai",
+    "claude",
+    "gpt",
+    "context",
+    "cli"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "8.4.0",
+    "tsx": "4.19.3",
+    "typescript": "5.8.3",
+    "vitest": "3.1.1"
+  }
+}
